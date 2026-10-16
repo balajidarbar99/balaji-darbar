@@ -1,0 +1,19 @@
+<!-- ID Card Form -->
+<div class="form-container">
+    <h2>श्री बालाजी दरबार - ID Card फॉर्म</h2>
+    <input type="text" id="userName" placeholder="पूरा नाम दर्ज करें" required>
+    <input type="text" id="userAddress" placeholder="पता / शहर" required>
+    <input type="text" id="userPhone" placeholder="मोबाइल नंबर" required>
+    <input type="file" id="userPhoto" accept="image/*" required>
+    <button onclick="generateCard()">ID Card बनाएं</button>
+</div>
+
+<!-- ID Card Layout (जो बाद में दिखेगा) -->
+<div id="idCard" style="display:none; border: 2px solid #ffcc00; width: 300px; padding: 15px; text-align: center; background: #fff5e6;">
+    <h3 style="color: #cc0000; margin: 0;">जय श्री बालाजी दरबार</h3>
+    <img id="cardPhoto" src="" style="width: 100px; height: 100px; border-radius: 50%; margin: 10px 0;">
+    <h4 id="cardName"></h4>
+    <p><b>पता:</b> <span id="cardAddress"></span></p>
+    <p><b>मोबाइल:</b> <span id="cardPhone"></span></p>
+    <button onclick="window.print()">Card प्रिंट करें</button>
+</div>
